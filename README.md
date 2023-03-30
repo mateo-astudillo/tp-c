@@ -1,5 +1,9 @@
 # Trabajo Práctico - Repaso de C 
 
+## Download ⬇️
+- [**Last Release**](https://github.com/mateo-astudillo/tp-c/tree/v0.1.8)
+- [**Stable Release**](https://github.com/mateo-astudillo/tp-c/tree/v0.1.8)
+
 ## Requirements 🔧
 
 - [**MAKE**](https://cmake.org/install/)
