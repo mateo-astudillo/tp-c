@@ -1,34 +1,44 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#ifdef WIN32
-#include <windows.h>
-#define CLEAR "cls"
-#else
-#include <unistd.h>
-#define CLEAR "clear"
-#endif
-
+#include "../inc/main.h"
 #include "../inc/exercises.h"
 
+
 int main() {
-	int menu = 1;
+	int option = 1;
 	char *options[] = {
 		"0 - Salir",
-		"1 - Ejercicio 15"
+		"1 - Ejercicio a) 1.",
+		"2 - Ejercicio b) 4.",
+		"3 - Ejercicio d) 2.",
+		"4 - Ejercicio e) 13.",
+		"5 - Ejercicio e) 15."
 	};
 	int options_length = sizeof(options) / sizeof(options[0]);
-	while(menu) {
+	while(option) {
 		for (int i=0; i<options_length; i++)
 			printf(" %s\n", options[i]);
 		printf(" > ");
-		scanf("%d", &menu);
-		switch(menu) {
+		scanf("%d", &option);
+		switch(option) {
+			case 0:
+				printf(" Adiós\n");
+				break;
 			case 1:
+				exercise1();
+				break;
+			case 2:
+				exercise4();
+				break;
+			case 3:
+				exercise2();
+				break;
+			case 4:
+				exercise13();
+				break;
+			case 5:
 				exercise15();
 				break;
 			default:
-				printf(" Opcion no disponible\n");
+				printf(" Opción no disponible\n");
 				break;
 		}
 		sleep(2);
