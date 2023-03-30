@@ -4,12 +4,11 @@
 - [**Last Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v0.1.8)
 - [**Stable Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v0.1.8)
 
-## Requirements 🔧
+## How to Build 💻
 
+### Requirements 🔧
 - [**MAKE**](https://cmake.org/install/)
 - [**GCC**](https://gcc.gnu.org/install/)
-
-## How to Build 💻
 
 - First, clone repository
 ```sh
@@ -25,7 +24,6 @@ make
 ```
 
 ## How to run 🚀
-
 #### Windows 🪟
 
 - Run the .exe file
@@ -34,7 +32,6 @@ make
 ```
 
 #### Linux 🐧
-
 - Run the bin file
 ```sh
 ./bin/tp
