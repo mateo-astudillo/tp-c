@@ -100,6 +100,6 @@ void exercise15() {
 				break;
 		}
 		system(CLEAR);
-		sleep(2);
+		slp(1);
 	}
 }

@@ -48,7 +48,9 @@ static void showApprovedStudents(){}
 void exercise13() {
 	printf(" Ejercicio 13\n");
 	int students = 5, grades = 2, option = 1, stateNotes = 0;
-	float **mathNotes = (float **) malloc(students * grades * sizeof(float *));
+	float **mathNotes = (float **) malloc(grades * sizeof(float *));
+	for (int i = 0; i < grades; i++)
+      mathNotes[i] = (float *) malloc(students * sizeof(float));
 
 	char *options[] = {
 		"0 - Salir",
@@ -89,11 +91,12 @@ void exercise13() {
 			default:
 				break;
 		}
+		system(CLEAR);
+		slp(1);
 	}
 
-	for (int i = 0; i < grades*students; i++) {
-        free(mathNotes[i]);
-    }
-    free(mathNotes);
+	for (int i = 0; i < grades; i++)
+      free(mathNotes[i]);
+  free(mathNotes);
 	
 }
