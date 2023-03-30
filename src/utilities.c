@@ -1,5 +1,14 @@
 #include "../inc/main.h"
 
+void slp(int seconds) {
+  #ifdef _WIN32
+    Sleep(seconds*1000);
+  #else
+    sleep(seconds);
+  #endif
+}
+
+
 int getInt(int min, int max) {
 	char temp[100];
 	int number = min - 1;
@@ -29,4 +38,5 @@ int menu(int first, int last, char *options[last]) {
 	option = getInt(first, last - 1);
 	return option;
 }
+
 

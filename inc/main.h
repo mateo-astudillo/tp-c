@@ -10,6 +10,7 @@
 #define CLEAR "clear"
 #endif
 
+void slp(int seconds);
 int getInt(int min, int max);
 float getFloat(int min, int max);
 int menu(int first, int last, char *options[last]);
