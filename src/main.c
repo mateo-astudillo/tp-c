@@ -14,7 +14,7 @@ int main() {
 	};
 	int options_length = sizeof(options) / sizeof(options[0]);
 	while(option) {
-		option = menu(options_length, options);
+		option = menu(0, options_length, options);
 		switch(option) {
 			case 0:
 				printf(" Adiós\n");

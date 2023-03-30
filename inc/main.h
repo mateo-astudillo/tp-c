@@ -11,4 +11,4 @@
 #endif
 
 int getInt(int min, int max);
-int menu(int o, char *options[o]);
+int menu(int first, int last, char *options[last]);
