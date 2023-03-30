@@ -3,7 +3,7 @@
 void exercise13() {
 	printf(" Ejercicio 13\n");
 	int students = 5, grades = 2;
-	float mathNotes[grades][students], average = 0, total = 0;
+	float mathNotes[grades][students], average = 0, total = 0, max = 0;
 
 
 	for (int i = 0; i < grades; i++) {
@@ -13,6 +13,16 @@ void exercise13() {
 			mathNotes[i][j] = getFloat(1, 10);
 		}	
 	}
+
+
+	for (int i = 0; i < grades; i++) {
+		for (int j = 0; j < students; j++) {
+			if (max <= mathNotes[i][j])
+				max = mathNotes[i][j];
+		}
+	}
+	printf(" La nota mayor es: %.2f\n", max);
+	
 
 	printf(" Promedio de notas: \n");
 	for (int i = 0; i < grades; i++) {
@@ -38,10 +48,10 @@ void exercise13() {
 	Se pide cargar en una matriz las notas de matemáticas de los alumnos de
 	secundaria de una escuela. Suponiendo que hay 2 grados distintos, 5 alumnos
 	por grado, se pide:
-	i. Ingresar las notas que ha sacado cada alumno de cada grado.
-	ii. Imprimir cuál es la nota promedio de cada grado.
-	iii. Imprimir la mayor nota en general.
-	iv. Imprimir todas las notas.
+	i. Ingresar las notas que ha sacado cada alumno de cada grado. 🟢
+	ii. Imprimir cuál es la nota promedio de cada grado. 🟢
+	iii. Imprimir la mayor nota en general. 🟢
+	iv. Imprimir todas las notas. 🟢
 	v. Imprimir cuántos alumnos aprobaron (sacaron mayor a 7) y
 	cuántos reprobaron de cada grado
 */
