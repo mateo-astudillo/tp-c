@@ -13,7 +13,7 @@ int getInt(int min, int max) {
 
 float getFloat(int min, int max) {
 	char temp[100];
-	int number = min - 1;
+	float number = min - 1;
 	while (number < min || number > max) {
 		printf(" (%d - %d)\n > ", min, max);
 		scanf("%s", temp);
