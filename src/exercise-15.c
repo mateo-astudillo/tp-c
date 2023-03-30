@@ -1,19 +1,23 @@
 #include "../inc/exercises.h"
 
-void exercise15() {
-	printf(" Ejercicio 15\n");
-	int routes[5][5], first_city, second_city, relations = 0;
-	// Charge routes
+void chargeRoutes(int r, int c, int routes[r][c]) {
 	for (int i=0; i<5; i++) {
 		for (int j=i; j<5; j++) {
 			if (i == j)
 				continue;
 			printf(" Distancia entre ciudad %d y %d\n > ", i+1, j+1);
 			scanf("%d", &routes[i][j]);
-			// routes[i][j] = 0; // Debug
 			routes[j][i] = routes[i][j];
 		}
 	}
+}
+
+void exercise15() {
+	printf(" Ejercicio 15\n");
+	int r = 5, c = 5;
+	int routes[r][c], first_city, second_city, relations = 0;
+	chargeRoutes(r, c, routes);
+
 	// Modify routes
 	printf("Inserte las ciudades a modificar\n Primer ciudad\n > ");
 	scanf("%d", &first_city);

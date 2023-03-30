@@ -10,3 +10,5 @@
 #define CLEAR "clear"
 #endif
 
+int getInt(int, int);
+int menu(int, char**);
