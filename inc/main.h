@@ -10,5 +10,5 @@
 #define CLEAR "clear"
 #endif
 
-int getInt(int, int);
-int menu(int, char**);
+int getInt(int min, int max);
+int menu(int o, char *options[o]);

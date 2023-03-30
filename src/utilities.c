@@ -1,9 +1,11 @@
 #include "../inc/main.h"
+#include <stdio.h>
 
 int getInt(int min, int max) {
 	char temp[100];
 	int number = min - 1;
 	while (number < min || number > max) {
+		printf(" > ");
 		scanf("%s", temp);
 		number = atoi(temp);
 	}

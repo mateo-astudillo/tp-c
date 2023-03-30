@@ -15,9 +15,6 @@ TARGET = $(BIN_DIR)/tp
 
 all: $(TARGET)
 
-show:
-	echo $(SRC)
-
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
 
@@ -28,4 +25,4 @@ $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 
 clean:
-	rm -rf $(OBJ_DIR) $(BIN_DIR)
+	rm -rf $(OBJ) $(TARGET)
