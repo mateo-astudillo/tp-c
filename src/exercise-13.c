@@ -2,15 +2,36 @@
 
 void exercise13() {
 	printf(" Ejercicio 13\n");
-	int students = 5;
-	int grades = 2;
-	int mathNotes[grades][students];
+	int students = 5, grades = 2;
+	float mathNotes[grades][students], average = 0, total = 0;
 
-	for (size_t i = 0; i < grades; i++) {
-		for (size_t j = 0; j < students; j++)
-			mathNotes[i][j] = getInt(1, 10);	
+
+	for (int i = 0; i < grades; i++) {
+		printf(" Grado %d: \n", i+1);
+		for (int j = 0; j < students; j++){
+			printf(" Ingrese nota alumno %d: ", j+1);
+			mathNotes[i][j] = getFloat(1, 10);
+		}	
+	}
+
+	printf(" Promedio de notas: \n");
+	for (int i = 0; i < grades; i++) {
+		for (int j = 0; j < students; j++)
+		{
+			total += mathNotes[i][j];
+		}
+		average = total / students;
+		total = 0;
+		printf(" El promedio de grado %d es: %.2f\n", i, average);
 	}
 	
+	printf(" Notas de alumnos\n");
+	for (int i = 0; i < grades; i++) {
+		printf(" Grado %d: \n", i+1);
+		for (int j = 0; j < students; j++)
+			printf(" Alumno %d : %.2f \n", j+1, mathNotes[i][j]);
+	}
+	system("pause");
 }
 
 /*
