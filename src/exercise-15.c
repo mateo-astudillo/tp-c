@@ -73,6 +73,7 @@ void exercise15() {
 		"5 - Ver distancia entre ciudades"
 	};
 	int options_length = sizeof(options) / sizeof(options[0]);
+	system(CLEAR);
 	while (option != 0) {
 		option = menu(0, options_length, options);
 		switch (option) {
@@ -99,7 +100,7 @@ void exercise15() {
 			default:
 				break;
 		}
+		slp(2);
 		system(CLEAR);
-		slp(1);
 	}
 }

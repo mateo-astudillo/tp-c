@@ -51,7 +51,6 @@ void exercise13() {
 	float **mathNotes = (float **) malloc(grades * sizeof(float *));
 	for (int i = 0; i < grades; i++)
       mathNotes[i] = (float *) malloc(students * sizeof(float));
-
 	char *options[] = {
 		"0 - Salir",
 		"1 - Cargar Notas",
@@ -60,9 +59,8 @@ void exercise13() {
 		"4 - Mostrar todas las notas",
 		"5 - Alumnos aprobados"
 	};
-
 	int options_length = sizeof(options) / sizeof(options[0]);
-
+	system(CLEAR);
 	while (option != 0) {
 		if (!stateNotes) {
 			setNotes(grades, students, mathNotes);
@@ -91,8 +89,8 @@ void exercise13() {
 			default:
 				break;
 		}
+		slp(2);
 		system(CLEAR);
-		slp(1);
 	}
 
 	for (int i = 0; i < grades; i++)

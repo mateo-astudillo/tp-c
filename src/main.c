@@ -1,7 +1,6 @@
 #include "../inc/main.h"
 #include "../inc/exercises.h"
 
-
 int main() {
 	int option = 1;
 	char *options[] = {
@@ -13,6 +12,7 @@ int main() {
 		"5 - Ejercicio e) 15."
 	};
 	int options_length = sizeof(options) / sizeof(options[0]);
+	system(CLEAR);
 	while(option) {
 		option = menu(0, options_length, options);
 		switch(option) {
