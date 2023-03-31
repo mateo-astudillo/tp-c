@@ -38,7 +38,7 @@ int main() {
 				printf(" Opción no disponible\n");
 				break;
 		}
-		sleep(2);
+		slp(2);
 		system(CLEAR);
 	}
 }
