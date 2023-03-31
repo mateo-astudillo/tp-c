@@ -28,6 +28,8 @@ void exercise1() {
 	if (number > 100) {
 		add_extra = (150 * number) / 100;
 		number += add_extra;
-		printf(" El numero es mayor a 100, agregado su 150%% es: %d", number);
+		printf(" El numero es mayor a 100, agregado su 150%% es: %d\n", number);
+	} else {
+		printf(" El numero ingresado es %d\n", number);
 	}
 }
