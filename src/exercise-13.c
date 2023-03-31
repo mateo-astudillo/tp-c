@@ -43,7 +43,16 @@ static void showNotes(int grades, int students, float **mathNotes){
 	}
 }
 
-static void showApprovedStudents(){}
+static void showApprovedStudents(int grades, int students, float **mathNotes){
+	int approvedStudents = 0;
+	for (int i = 0; i < grades; i++) {
+		for (int j = 0; j < students; j++)
+			if (mathNotes[i][j] >= 7) {
+				approvedStudents ++;
+			}
+	}	
+	printf(" Cantidad de alumnos aprobados: %d", approvedStudents);
+}
 
 void exercise13() {
 	printf(" Ejercicio 13\n");
@@ -84,7 +93,7 @@ void exercise13() {
 				showNotes(grades, students, mathNotes);
 				break;
 			case 5:
-				showApprovedStudents();
+				showApprovedStudents(grades, students, mathNotes);
 				break;
 			default:
 				break;
