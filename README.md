@@ -38,6 +38,6 @@ make
 ```
 
 ## Members 👤
-- Oliva Santiago
-- Vusanovich Stiven
-- Astudillo Mateo
+- [**Oliva Santiago**](https://github.com/MrPanda78)
+- [**Vusanovich Stiven**](https://github.com/StivenCodess)
+- [**Astudillo Mateo**](https://github.com/mateo-astudillo)
