@@ -17,10 +17,9 @@ static int isInteger(char *integer, int length)
 }
 
 void exercise1() {
-	system(CLEAR);
 	printf(" Ejercicio 1\n");
 
-	char number1[100];
+	char number1[10];
 	int number2 = 0, add_extra = 0;
 
 	printf("Digite un numero: ");
@@ -32,7 +31,6 @@ void exercise1() {
 	}
 	else
 	{
-		system(CLEAR);
 		exercise1();
 		return;
 	}
@@ -43,9 +41,4 @@ void exercise1() {
 		number2 += add_extra;
 		printf("El numero es mayor a 100, agregado su 150%% es: %d", number2);
 	}
-	else
-	{
-		printf("El numero es menor igual que 100, resultado: %d", number2);
-	}
-	slp(3);
 }
