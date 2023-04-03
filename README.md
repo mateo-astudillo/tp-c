@@ -1,7 +1,7 @@
 # Trabajo Práctico - Repaso de C 
 
 ## Download ⬇️
-- [**Last Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v1.0.0)
+- [**Lastest release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v1.0.0)
 
 ## How to Build 💻
 
