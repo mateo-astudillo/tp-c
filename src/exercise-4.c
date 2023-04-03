@@ -1,5 +1,4 @@
 #include "../inc/exercises.h"
-#include <ctype.h>
 
 static int isInteger(char *integer, int length)
 {
