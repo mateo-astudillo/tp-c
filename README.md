@@ -1,8 +1,7 @@
 # Trabajo Práctico - Repaso de C 
 
 ## Download ⬇️
-- [**Last Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v0.3.8)
-- [**Stable Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v0.1.8)
+- [**Last Release**](https://github.com/mateo-astudillo/tp-c/releases/tag/v1.0.0)
 
 ## How to Build 💻
 
@@ -30,11 +29,19 @@ make
 ```powershell
 .\bin\tp.exe
 ```
+or (in bin directory)
+```
+.\tp.exe
+```
 
 #### Linux 🐧
 - Run the bin file
 ```sh
 ./bin/tp
+```
+or (in bin directory)
+```
+./tp
 ```
 
 ## Members 👤
